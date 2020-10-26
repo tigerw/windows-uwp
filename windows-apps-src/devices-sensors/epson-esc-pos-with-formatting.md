@@ -23,7 +23,7 @@ Windows Point of Service provides use of a variety of printers, including severa
 
 ESC/POS is a command system created by Epson used across a wide range of POS printer systems, aimed at avoiding incompatible command sets by providing universal applicability. Most modern printers support ESC/POS.
 
-All commands start with the ESC character (ASCII 27, HEX 1B) or GS (ASCII 29, HEX 1D), followed by another character that specifies the command. Normal text is simply sent to the printer, separated by line breaks.
+All commands start with the ␛ character (ASCII 27, HEX 1B) or ␝ (ASCII 29, HEX 1D), followed by another character that specifies the command. Normal text is simply sent to the printer, separated by line breaks.
 
 The [**Windows PointOfService API**](/uwp/api/Windows.Devices.PointOfService) provides much of that functionality for you via the **Print()** or **PrintLine()** methods. However, to get certain formatting or to send specific commands, you must use ESC/POS commands, built as a string and sent to the printer.
 
